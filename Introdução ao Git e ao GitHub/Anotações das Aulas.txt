@@ -1,0 +1,150 @@
+O Git foi criado em 2005, e é um sistema de versionamento de código distribuído que permite que várias pessoas mexam no código de forma simultânea e tendo acesso a várias versões desse programa. O Git foi criado por Linus Torvalds (mesmo criador do Linux). 
+
+Enquanto isso, temos o GitHub que foi criado pela Microsoft com o objetivo de armazenar tais códigos presentes dentro do Git. 
+
+![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/9040c8b9-38fe-48a2-bae6-7c8a4b792e74/Untitled.png)
+
+O Git é OpenSource (aberto ao público) por isso funciona de forma gratuita. Enquanto o GitHub seria um repositório, uma plataforma onde estaria agregando o seu site de forma paga. 
+
+O que ganhamos ao fazer essa junção do Git com o GitHub?
+
+1. Controle de versão;
+2. Armazenamento em nuvem;
+3. Trabalho em equipe;
+4. Melhorar seu código;
+5. Reconhecimento.
+- Navegação via command line interface e instalação
+    
+    Existem softwares que funcional através de uma interface gráfica (GUI), onde é possível fazer seleções, arrastar caixas entre outras funções.
+    
+    O Git é um software de Command Line Interface (CLI), ou seja, a forma de interagir com ele é através de linhas de comandos.  
+    
+    O que vamos aprender? (São os comandos básicos para interagir com o Git)
+    
+    - Mudar de pastas
+    - Listar as pastas
+    - Criar pastas/arquivos
+    - Deletar pastas/arquivos
+    
+    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/56626b55-dde7-480d-a4c3-8f28cbfaca09/Untitled.png)
+    
+    Aplicar todos esses comandos dentro do programa Prompt de Comando
+    
+    Flags são complementos utilizados em comandos que tem a função de especificar ou modificar a busca feita. 
+    
+- Entendendo como o Git funciona por baixo dos panos
+    - SHA1
+        
+        A sigla SHA significa Secure Hash Algorithm (Algoritmo de Hash Seguro), é um conjunto de funções hash criptográficas projetadas pela NSA (Agência de Segurança Nacional dos EUA).
+        
+        A encriptação gera um conjunto de caracteres identificadores de 40 dígitos. 
+        
+        Aumenta a segurança do arquivo e promove uma maior agilidade no momento de busca por conta dos seus códigos únicos.
+        
+    - Objetos Fundamentais
+        - Blobs (bolhas)
+            
+            ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/15ae5809-b160-48ca-bd9f-27f5420aecfc/Untitled.png)
+            
+            Um blob deve ter o tipo do arquivo, o tamanho, uma barra contrária ( \ ), e seu conteúdo
+            
+            ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ea4ad615-f535-4965-ab78-43b2fa583a36/Untitled.png)
+            
+        - Trees (árvores)
+            
+            Faz o armazenamento de Blobs. Monta toda uma estrutura por trás. Tendo diretórios dentro de outros diretórios. 
+            
+            ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/eb323414-71be-4ae2-ab76-e1c73137723f/Untitled.png)
+            
+        - Commits
+            
+            Os commits são objetos do git que dão significado as alterações feitas. E esses objetos em si, carregam uma mensagem de texto, juntamente com outros metadados como (autor, a hora que o commit foi criado).
+            
+            Faz a junção de todas as etapas anteriores, blobs e trees. 
+            
+            ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/00a835d9-a757-4732-b17a-50c6b240f146/Untitled.png)
+            
+    - Sistema Distribuído
+    - Segurança
+    - Chaves SSH e Tokens
+        
+        É uma forma de estabelecer uma conexão segura e incriptada por duas máquinas. Teremos então duas chaves de segurança.
+        
+- Primeiros comandos com Git
+    
+    Passos dessa aula:
+    
+    - Iniciar o Git
+        - git init
+    - Iniciar o versionamento
+        - git add
+        
+        A flag (-a) mostra arquivos ocultos
+        
+        Para voltar um nível basta escrever (cd ..)
+        
+    - Criar um commit
+        - git commit
+        
+    
+    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/96095e37-bd44-44cf-8147-0f8179c32775/Untitled.png)
+    
+    O TYPORA se tornou um software pago e por isso ele ja não vem instalado no Windows.  
+    
+- Ciclo de vida dos arquivos no Git
+    - Git init - Além de criar a pasta (.git), ela inicializa o repositório, assim estamos criando um repositório, dentro de um diretório (pasta).
+    
+    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/6270ca33-537f-48df-9a84-8b28e53dcef0/Untitled.png)
+    
+    - Repositórios
+    
+    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/54e09cca-4c19-4008-9a03-450aa2d78995/Untitled.png)
+    
+    Comando git status (Unmodified, Untracked, Staged)
+    
+    - Vai relatar os status do meu repositório
+    
+    Formas de adicionar um arquivo:
+    
+    - git add nomeArquivo
+    - git add *
+    - git add .
+    
+    Move toda a área de staged para um repositório local
+    
+    git. commit -m “msg..”
+    
+- Introdução ao GitHub
+    
+    Repositório Local x Repositório Remoto
+    
+    Conceito de branch 
+    
+    Conceito de Master
+    
+    git remote add origin https: (Primeiro passo após criarmos um novo repositório no GitHub é adicionar a url no Git Bash).
+    
+    git remote -v 
+    
+- Resolvendo Conflitos
+    
+    Conflito de Merge (Existem duas alterações na mesma linha)
+    
+    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f1f169bd-2d4a-4b47-b239-f9d27adb9c89/Untitled.png)
+    
+
+Quando é feita alguma alteração no arquivo base e salvamos tal arquivo. Ao abrir o git e buscar por git status, notamos que ele está  “no staged”. Isso significa que é necessário atualizar o Git, para isso usamos o comando “git add *”.
+
+Após isso, lemos novamente o status e vemos que o arquivo foi movido para o unstage. Que é o o que queríamos desde o começo. 
+
+Então utilizamos o comando “git commit -m “Adiciona ..” 
+
+Após isso devemos enviar o código da nossa máquina para o GitHub, então usamos o comando “git push origin master”
+
+Quando existem alterações feitas no mesmo código por pessoas diferentes, o Git identifica uma certa desincronização entre os repositórios. Para contornar tal problema devemos puxar o código da outra máquina e ai o Git tentará fazer essa junção para nós de forma automática “git pull origin master”
+
+Após identificar todas as mudanças e fazer as devidas alterações, tudo o que você deve fazer é commitar o processo novamente:
+
+1. git add * 
+2. git commit -m “resolve conflitos”
+3. git push origin master
